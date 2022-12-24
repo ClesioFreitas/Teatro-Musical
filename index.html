@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/estilos.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="img/ex11_2.jpg" alt="Teatro" class="img-fluid">
+      </div>
+      <div class="col-sm-9 ">
+        <h1>Teatro: Show Musical - Reserva de Poltronas</h1>
+
+        <div class="row">
+          <div class="col-sm-">
+            <p><label for="inPoltrona">Nº da Poltrona:</label>
+              <input type="number" class="form-control" id="inPoltrona" min="1" required autofocus>
+            </p>
+          </div>
+          <div class="col-sm-5 mb-5">
+            <input type="button" class="btn btn-primary mt-4" id="btReservar" value="Reservar">
+            <input type="button" class="btn btn-danger mt-4" value="Confirmar Reserva" id="btConfirmar">
+            <input type="button" class="btn btn-warning mt-4" value="Limpar" id="btLimpar">
+          </div>
+          <div class="col-sm-6">
+            Legenda:
+            <p class="mt-2"><img src="img/disponivel.jpg"> Disponível
+              <img src="img/reservada.jpg" class="ms-3"> Reservada
+              <img src="img/ocupada.jpg" class="ms-3"> Ocupada
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-13" id="divPalco">
+            <p class="bg-primary text-white text-center"> Palco do Teatro </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
