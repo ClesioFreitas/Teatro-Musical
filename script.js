@@ -132,11 +132,8 @@ function confirmarReserva(){
 const btConfirmar = document.querySelector("#btConfirmar");
 btConfirmar.addEventListener("click", confirmarReserva)
 
-
-function limparLocalStorage(){
+const btLimpar = document.querySelector("#btLimpar");
+btLimpar.addEventListener("click", () => {
   localStorage.clear();
   location.reload();
-}
-
-const btLimpar = document.querySelector("#btLimpar");
-btLimpar.addEventListener("click", limparLocalStorage)
+})
